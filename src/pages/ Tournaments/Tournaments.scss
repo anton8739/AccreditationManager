@@ -1,0 +1,101 @@
+@import "src/styles/variables";
+.tournaments-page {
+  padding: 40px 20px 20px 20px;
+  .btns {
+    display: flex;
+    gap: 20px;
+    .create-btn {
+      width: 300px;
+      margin: 5px;
+      color: $color_white;
+      height: 50px;
+      background: $color_font_green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      span {
+        font-size: 24px;
+      }
+      @media only screen and (max-width: 375px) {
+        width: 250px;
+      }
+    }
+  }
+  .table-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .table-wrapper {
+      max-width: 880px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
+
+      .table {
+        .table-actions {
+          display: flex;
+          gap: 20px;
+          justify-content: center;
+        }
+        .delete-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #F1F1F1;
+          color: #E83125;
+          font-size: 24px;
+          line-height: 25px;
+          width: 35px;
+          height: 35px;
+        }
+        .edit-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #F1F1F1;
+          color: #00573A;
+          font-size: 24px;
+          line-height: 25px;
+          width: 35px;
+          height: 35px;
+        }
+        .delete-btn, .edit-btn:hover {
+          cursor: pointer;
+        }
+      }
+      .search-btn {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+      }
+      .ant-table-thead {
+        font-weight: 600;
+        font-size: 16px ;
+        color: #000000;
+        >tr>th {
+          background: #FFFFFF;
+        }
+        .ant-table-cell {
+          padding: 5px 10px 5px 10px;
+        }
+        .ant-table-column-sorters {
+          justify-content: unset;
+          .ant-table-column-title {
+            flex: unset;
+          }
+        }
+      }
+      .ant-table-tbody {
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000;
+        .ant-table-cell {
+          padding: 5px 10px 5px 10px;
+        }
+      }
+    }
+  }
+}

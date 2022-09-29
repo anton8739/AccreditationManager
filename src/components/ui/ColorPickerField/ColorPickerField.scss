@@ -1,0 +1,12 @@
+.color-picker-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .color-preview {
+    border: 1px solid #00573a;
+    border-radius: 4px;
+  }
+  .swatches-picker {
+    width: 100%!important;
+  }
+}

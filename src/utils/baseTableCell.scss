@@ -1,0 +1,14 @@
+.colorCell {
+  width: 24px;
+  height: 24px;
+  margin: 5px;
+  @media only screen and (max-width: 767px) {
+    width: 18px;
+    height: 18px;
+  }
+}
+.AccreditationNameField {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

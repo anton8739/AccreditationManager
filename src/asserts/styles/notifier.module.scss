@@ -1,0 +1,39 @@
+.common {
+    border-radius: 5px;
+    &:after {
+        content: '';
+        width: 6px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+}
+
+.success {
+    @extend .common;
+    &:after {
+        background: var(--color-primary);
+    }
+}
+
+.error {
+    @extend .common;
+    &:after {
+        background: var(--color-error);
+    }
+}
+
+.warn {
+    @extend .common;
+    &:after {
+        background: #ff9924;
+    }
+}
+
+.info {
+    @extend .common;
+    &:after {
+        background: #00a3ff;
+    }
+}

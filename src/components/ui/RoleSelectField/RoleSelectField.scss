@@ -1,0 +1,9 @@
+.role-select-field-label {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  .color {
+    width: 18px;
+    height: 18px;
+  }
+}

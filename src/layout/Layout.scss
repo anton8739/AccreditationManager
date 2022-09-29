@@ -1,0 +1,66 @@
+@import "src/styles/variables";
+.layout {
+  display: flex;
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background: $color_white;
+    border-right: 1px solid #F1F1F1;
+    position: relative;
+    overflow-x: hidden;
+    .menu-btn {
+      width: 50px;
+      margin: 5px;
+      background: transparent;
+    }
+    .menu-btn:hover {
+      color: $color_font_green;
+      border-color: $color_font_green;
+      --antd-wave-shadow-color : none;
+    }
+    .ant-menu {
+      width: 300px;
+      margin-top: 60px;
+      color: $color_font_gray;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      @media only screen and (max-width: 500px) {
+        width: 100vw;
+      }
+      .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+        color: $color_font_green !important;
+      }
+      .ant-menu-item-selected {
+        color: $color_font_green;
+      }
+
+      .ant-menu-item-icon {
+        font-size: 25px;
+      }
+      .ant-menu-item-active:hover {
+        color: $color_font_green;
+      }
+      &.ant-menu-inline-collapsed {
+        width: 60px;
+      }
+    }
+
+    .sidebar-bg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+@import "src/styles/variables";
+.home-page {
+  padding: 40px 20px 20px 20px;
+  .btns {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    .show-btn {
+      margin: 5px;
+      color: #00573A;
+      height: 50px;
+      background: #F1F1F1;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      width: 300px;
+      justify-content: center;
+      span {
+        font-size: 24px;
+      }
+      @media only screen and (max-width: 375px) {
+        width: 250px;
+      }
+    }
+    .create-btn {
+      width: 300px;
+
+      margin: 5px;
+      color: $color_white;
+      height: 50px;
+      background: $color_font_green;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      justify-content: center;
+      span {
+        font-size: 24px;
+      }
+      @media only screen and (max-width: 375px) {
+        width: 250px;
+      }
+    }
+  }
+  .info {
+    margin-top: 30px;
+    border: 1px solid #F1F1F1;
+    padding: 5px;
+    display: flex;
+    max-width: fit-content;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 1040px) {
+      flex-wrap: wrap;
+    }
+    .info-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      border-right: 1px solid #F1F1F1;
+      padding: 10px 40px 10px 40px;
+      @media only screen and (max-width: 1040px) {
+        border-right: unset;
+      }
+      &.blue {
+        color: #2E47CA;
+      }
+      &.blue-light {
+        color: #1E87FA;
+      }
+      &.green {
+        color: #15AA1B;
+      }
+      &.orange {
+        color: #F07923;
+      }
+      .title {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-weight: 600;
+        font-size: 16px;
+        span {
+          font-size: 24px;
+        }
+      }
+      .number {
+        font-weight: 700;
+        font-size: 34px;
+      }
+    }
+    .info-item:first-child {
+      padding: 10px 40px 10px 10px;
+      @media only screen and (max-width: 1040px) {
+        padding: 10px 40px 10px 40px;
+      }
+    }
+    .info-item:last-child {
+      border-right: none;
+      padding: 10px 10px 10px 40px;
+      @media only screen and (max-width: 1040px) {
+        padding: 10px 40px 10px 40px;
+      }
+    }
+  }
+  .role-table-section {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .roles-table-section-title {
+      padding-bottom: 5px;
+      font-weight: 600;
+      font-size: 24px;
+      color: $color_font_black;
+    }
+  }
+}

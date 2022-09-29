@@ -1,0 +1,134 @@
+.card-view {
+  border-radius: 4px;
+  max-width: 880px;
+  .card-view-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F1F1F1;
+    padding: 15px;
+    @media only screen and (max-width: 500px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .title {
+      font-weight: 600;
+      font-size: 16px;
+      color: #000000;
+    }
+    .actions {
+      font-weight: 400;
+      font-size: 16px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      .edit {
+        color: #000000;
+      }
+      .edit:hover {
+        cursor: pointer;
+      }
+      .delete {
+        color: #E83125;
+      }
+      .delete:hover {
+        cursor: pointer;
+      }
+    }
+
+
+  }
+
+  .card-view-body {
+    border: 1px solid #F1F1F1;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    @media only screen and (max-width: 500px) {
+      flex-direction: column;
+    }
+    .card-view-img {
+      background: #F1F1F1;
+      position: relative;
+
+      width: 200px;
+      height: 300px;
+      .foto-layout {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.6);
+        border: 1px solid #00573a;
+        color: #00573a;
+        left: 10px;
+        bottom: 80px;
+        width: 80px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+      }
+      .role-layout {
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        line-height: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .name {
+          font-weight: 600;
+          font-size: 16px;
+        }
+        .role {
+          font-size: 16px;
+        }
+        .zones {
+          display: flex;
+          gap: 3px;
+          font-size: 12px;
+          line-height: 12px;
+          justify-content: center;
+        }
+      }
+      img {
+        width: 200px;
+        height: 300px;
+
+      }
+    }
+
+    .card-view-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .card-view-content-section-title {
+        font-weight: 600;
+        font-size: 16px;
+        color: #000000;
+        text-align: left;
+      }
+      .card-view-content-role {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border: 1px solid #F1F1F1;
+        width: fit-content;
+        padding: 15px;
+        border-radius: 4px;
+        .color {
+          width: 24px;
+          height: 24px;
+        }
+        .title {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 130%;
+          color: #000000;
+        }
+      }
+    }
+  }
+}
